@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    align-items: center;
+    display: flex;
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    justify-content: space-evenly;
+}
+.navlogo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAAB+CAMAAAAeCnMBAAAAsVBMVEUjHyD///8mIiMAAAAfGxxCP0AZFBXl5eUAACD09PT7+/vb29tcWlr5pRsiHR4dGBns7OwRCw1VU1T/qhszMDGAf38cGyBycHEWGCAIAABqaGkADSAKEyAAECCrqqoMAAS9vb3Hx8eIh4ecnJxHRkY2KiDmmRzVjhyncB6/gB0ABiBZQB+NYB58VB45ODjT0tIAABFFMyBrSh9UOh//sRvJhx0vJSCwdh2aaB6DWx5iRB8ZtmZ9AAAFa0lEQVR4nO2ca3uiOhDHo8Egyi2CoBQRxGovVtaqvX3/D3ZmEl3t7pFt1LNn93nyf1FMCJMfM5NJ9EVJizT/RJGWQf5IaS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41aS41/a1cLuOcGZ97mCuv3qHTg2EeOSGDfbYAHSfHfo3LoMzu95MmFaMoyBtzu8fH0GB2j3I5jNNp3I+nsmnQg7DNaGjbTSpIPNEJHVPKLuBiYWZ1Go2OlYVghua+bzb7fqdjxZyXfseyEmGdx6bVaDQsMwYQI/T3sjJoj3uVBU8ULYD2pqbvZzS3OpY5rQer42Kh2djJ5AahXUCcyHavlNcEZqPZflQjHhJj+b3VKMA3cUd+7thDwmzslI9azdpI1XC5XoX2uj6ayYaSy5ez+HteSrhANbtistA45sopa4nROLwz9QRXdwea0TO5WA9N2iREvIq5VEzdzaVds8Cr5Rocb5dhMxZ+ZKTZR+HYTsJ4gXjLZSEpbfFoVQhD53LxGF6zpO4YrZlEclWUJh0RIoog1tLzKgvuesYQgx5DXPmYi3vwrIev1uCMySu3paNE5M1zuQgub1xAx1zlkAx9AWAsLcHlQoHgMMro7rggv/EWOMQdTySAEeLNvrBk7eJp8nO5AIXHWVGZR1x9TqiPWcyM0BIJhWWiVRaVyBvB5dJC5BOTSwKyn4hgZ/INmSvcZ8oyeAaXcbTSarho0j0sSOSiYiVMAEcAFocPtnTfhVw8F+sxy2q5uKgEfl7u84vZGMVcEFb/ARePxZqidFrH5XFMt3xIBQNyyXXrYYGn+TFXfh0uYR+qDEvquMZ41w89wnb+ksHvw4qB/CplQXDFoiiv5C9T2JITWae4RDJ1m64XyqSSJQFKqZnbnnilBnWNFjp1Or4K19gUvqc4P24xNVydpaxJWN6K74sAWmInm1DhN1/W1SMu4/Sxoi6OYoailPXdb/07Fxf+8ctKopS0OnA1qChgjTwXoeU/cHnTXvOUz+rimOysW2IjCk/l/X5zr/DoEQuubp5X6GVKDu7DTP3MNZ2UyalTRV2dGMrDQ7cHRBk1qLnjwhmRCzlCg03N3bwTqOUQz8KWh69lVkHG72sgbGiSy99x+bw16Z/FRcatSVbacLoMY+7C6SlJEnA868HVwDqVJDbYZSTJyv6SQ2FZQtPl39Lb1eqWfOMEomTwVpnnk+UQI+bBk7C1y6sHBk9OXX9e9aAsMWGcpO3IgyM1WsejNTm6urA9jtEOxz+j9G0+c5zZ/H0gbLh4SB3uMvzzo97ps+FXv3eM7pznm8EXBqaLjTObzZwgmKdfM30RFxncBfOPwa+nitZriOHL7Sy4/y1cpP0ebObv7ZvoV2AQ8SfSvg/ufg8XSVfzTeDcfUR18Rw8vDxvg81jexY8fyXsV+Aig+gO0saZ363TNB385LdoAL2P9zMY8jRIN7PRBViK37fbqy3MGmyc7dvz6qbdvhkBymCQjvDz6ult7myCIHh9GY0Wm8Vv5ILkeZw7gYNug1KwfX1bvD89PS3eXrcz7ARmZ7tOIxLN53W78tW5MIE+7gOBJUC+S7ad1/UDBDh6DF4uya6zfjeJHtrvmEWSbS9oz+4/9sv19uVXy/b6XKA0vX1cbKF67jWb3S/WL6ODjy7EOvt3pgjKVJusP54hvZ4/VlH7IY0uy6jrcAm5UTRARZd652f9rb/L/V/SXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGrSXGr6Q/9v1D/BgXDNkOLvIAAAAABJRU5ErkJggg==);
+    height: 50px;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+
+/** box two **/
+
+.navloc{
+    height: 80%;
+    align-items: center;
+}
+#locfirst{
+  color: #cccccc;
+  font-size: 0.80rem;
+  margin-left: 15px;
+}
+#locsecond{
+    font-size: 1rem;
+}
+.locicone{
+    display: flex;
+    align-items: center;
+}
+.navsearch:hover{
+    border: 2px solid sandybrown;
+}
+/** box three **/
+.navsearch{
+    display: flex;
+    width: 900px;
+    height: 80%;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    margin-left: 2px;
+}
+.select{
+    background-color:#f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px ;
+    border: none;
+}
+#search{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.searchicone{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px ;
+    background-color: #febd68;
+    color: #0f1111;
+}
+/** box four **/
+span{
+    font-size: 0.7rem;
+}
+.navsecond{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/** box6 **/
+.navcart i{
+   font-size: 30px;
+}
+.navcart{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/** 2nd navigation **/
+.width{
+    width: 650px;
+}
+.panel{
+    display: flex;
+    height: 40px;
+    background-color: #222f3d;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel1{
+    align-items: center;
+    height: 80%;
+}
+.panelitems{
+    margin-top: 5px;
+}
+.shops{
+    margin-top: 5px;
+    height: 80%;
+    font-weight: 700;
+}
+
+/** herosection **/
+.herosection{
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-image: url(topimg.jpg) ;
+}
+.herotext{
+    position: absolute;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-around;
+    height: 40px;
+    width: 99%;
+    text-align: center;
+    background-color: #f3f3f3;
+    margin-top: 250px;
+    font-weight: 700;
+}
+.herotext p{
+    margin-top: 10px;
+}
+.main{  
+    display: flex;
+    position: absolute;
+    height: 450px;
+    width: 99%;
+    margin-top: 310px;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+.firstcard{
+    width: 31%;
+    height: 400px;
+    background-color: #f3f3f3;
+}
+.top{
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+    display: flex;
+    height: 48%;
+    width: 100%;
+    background-color: white;
+}
+.bottom{
+    justify-content: space-between;
+    display: flex;
+    height: 50%;
+    width: 100%;
+    background-color: white;
+}
+.images{
+    height: 100%;
+    width: 48%;
+    background-size: cover;
+}
+
+.firstcard a{
+    margin-left: 1rem;
+}
+.main h2{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.secondcard{
+    width: 33%;
+    height: 400px;
+    background-color: #f3f3f3;
+}
+.img{
+    height: 400px;
+    width: 100%;
+    margin-top: 1.5erm;
+    background-size: cover;
+    background-image: url(health&personal.jpg);
+}
+.thirdcard{
+    width: 33%;
+    height: 400px;
+    background-color: #f3f3f3;
+}
+.imgt{
+    height: 400px;
+    width: 100%;
+    margin-top: 1.5erm;
+    background-size: cover;
+    background-image: url(_Beauty.jpg);
+}
+
+
+
